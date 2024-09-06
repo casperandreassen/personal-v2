@@ -48,48 +48,62 @@
     </script>
   </head>
   <body>
-    <main class="max-w-screen-lg m-auto p-5 flex flex-col gap-5">
+    <main class="max-w-screen-md m-auto p-5 flex flex-col gap-5">
       <div class="flex flex-col justify-center items-center">
         <img src="public/me.jpeg" class="rounded-full w-56" />
         <p class="text-bold text-3xl">Hi 👋, i'm Casper!</p>
       </div>
       <div class="m-auto flex flex-col items-center">
-        <div class="">
-          <p>A note about me</p>
-          <p>🎓 MSc in Informatics - Databases and Search @ NTNU</p>
-          <p>👷🏼 Building fintech applications part time @ Kølner AS</p>
-
+        <div>
+          <p>Some info about me</p>
+          <ul class="list-disc list-inside">
+            <li>
+              🎓 Started MSc in Informatics - Databases and Search @ NTNU in
+              2024
+            </li>
+            <li>
+              👷🏼 Building fintech applications part time since 2023 @ Kølner AS
+            </li>
+            <li>✅ Competed BSc in Informatics @ NTNU in 2024</li>
+          </ul>
+          <br />
           <p>
-            Also enjoys spending time with my son, riding my bicycle and coding
-            silly projects.
+            In my free time i enjoy spending time with my son, riding by bicycle
+            outside in summer and coding some small projects here and there.
+          </p>
+          <br />
+          <p>
+            If you want to contact me, feel free to use the contact form below.
           </p>
         </div>
       </div>
-
-      <div class="flex flex-col row-wrap gap-5 items-center">
-        <a
-          href="https://github.com/casperandreassen"
-          target="_blank"
-          class="flex flex-row items-center gap-3"
-        >
-          <img src="public/github.svg" class="w-8" />
-          <p class="text-xl">Github</p>
-        </a>
-        <a
-          href="https://linkedin.com/in/casper-andreassen-bb47a11b7"
-          target="_blank"
-          class="flex flex-row items-center gap-3"
-        >
-          <img src="public/linkedin.svg" class="w-8" />
-          <p class="text-xl">Linkedin</p>
-        </a>
+      <div>
+        <p>Connect with me</p>
+        <ul class="list-disc list-inside">
+          <li>
+            <a
+              href="https://github.com/casperandreassen"
+              target="_blank"
+              class="text-xl"
+              >Github</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/casper-andreassen-bb47a11b7"
+              target="_blank"
+              class="text-xl"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
       </div>
       <div class="mt-10">
         <p class="text-center text-xl">Contact form</p>
         <form
           action="https://api.web3forms.com/submit"
           method="POST"
-          class="flex flex-col items-center gap-5"
+          class="flex flex-col items-center gap-5 w-full"
         >
           <!-- Replace with your Access Key -->
           <input
@@ -98,16 +112,16 @@
             value="8169af45-e9bf-4026-9436-1b425b6d5b81"
           />
 
-          <div class="flex flex-col">
+          <div class="flex flex-col w-full">
             <!-- Form Inputs. Each input must have a name="" attribute -->
             <label for="name">Name</label>
             <input type="text" name="name" required class="" />
           </div>
-          <div class="flex flex-col">
+          <div class="flex flex-col w-full">
             <label for="email">Email</label>
             <input type="email" name="email" required />
           </div>
-          <div class="flex flex-col">
+          <div class="flex flex-col w-full">
             <label for="message">Message</label>
             <textarea name="message" required></textarea>
           </div>
@@ -124,7 +138,7 @@
             type="submit"
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           >
-            Submit Form
+            Send message
           </button>
         </form>
       </div>
